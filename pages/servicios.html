@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Servicios | Nexum Ingeniería</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Gerencia y Supervisión de Obra, Proyectos Integrales y Evaluaciones Estructurales." />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="icon" href="../assets/brand/logo_ico.png" type="image/png">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container flex flex--between flex--center">
+      <a class="brand" href="../index.html"><img src="../assets/brand/logo-nexum.png" alt="Nexum Ingeniería" width="132" height="48"></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Abrir menú"><span class="nav-toggle__bar"></span></button>
+      <nav id="primary-nav" class="site-nav" aria-label="Principal">
+        <a href="../index.html">Inicio</a>
+        <a href="servicios.html" aria-current="page">Servicios</a>
+        <a href="proyectos.html">Proyectos</a>
+        <a class="cta" href="contactanos.html">Contáctanos</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero" style="--hero-bg:url('../assets/hero/planos-obra-1920x640.jpg')">
+    <div class="container"><h1>Servicios</h1></div>
+  </section>
+
+  <main class="container tabs" data-tabs="servicios">
+    <!-- Tabs -->
+    <nav class="tabs__nav flex flex--wrap" role="tablist" aria-label="Servicios">
+      <button role="tab" aria-selected="true" data-tab-target="#gpso">Gerencia & Supervisión</button>
+      <button role="tab" aria-selected="false" data-tab-target="#integrales">Proyectos Integrales</button>
+      <button role="tab" aria-selected="false" data-tab-target="#estructurales">Evaluaciones Estructurales</button>
+    </nav>
+
+    <!-- Gerencia & Supervisión -->
+    <section id="gpso" role="tabpanel" class="tab is-active flow">
+      <h2>Gerencia de Proyectos y Supervisión de Obra</h2>
+      <p>Planificación, control de plazo/costo, gestión de contratistas y aseguramiento de calidad y seguridad desde la etapa conceptual hasta la entrega.</p>
+      <ol class="timeline grid grid--timeline">
+        <li><h3>Etapa conceptual</h3><p>Alineamiento de necesidades para la mejor relación costo-beneficio.</p></li>
+        <li><h3>Selección de contratistas</h3><p>Paquetización por partidas y proceso transparente con criterios definidos.</p></li>
+        <li><h3>Construcción</h3><p>Cumplimiento de calidad, costo, plazo y seguridad; materiales conforme al expediente técnico.</p></li>
+        <li><h3>Recepción</h3><p>Cierre de observaciones, dossier de calidad y liquidación de contratos.</p></li>
+      </ol>
+    </section>
+
+    <!-- Integrales -->
+    <section id="integrales" role="tabpanel" class="tab">
+      <h2>Proyectos Integrales</h2>
+      <div class="grid grid--2 grid--sm-1 grid--gap">
+        <article class="card soft"><h3>Costos y Presupuestos</h3><p>Elaboración según requerimientos con base de costos actualizada.</p></article>
+        <article class="card soft"><h3>Diseño e Ingeniería</h3><p>Desarrollo de especialidades y compatibilización del proyecto.</p></article>
+        <article class="card soft"><h3>Modelamiento BIM</h3><p>Modelo colaborativo para reducir incompatibilidades y planificar la obra.</p></article>
+        <article class="card soft"><h3>Trámites</h3><p>Acompañamiento hasta la obtención de licencias de construcción.</p></article>
+      </div>
+    </section>
+
+    <!-- Evaluaciones -->
+    <section id="estructurales" role="tabpanel" class="tab">
+      <h2>Evaluaciones Estructurales</h2>
+      <div class="grid grid--3 grid--sm-1 grid--gap">
+        <article class="card soft"><h3>Concreto</h3><p>Extracción de muestras, ensayos de resistencia y carbonatación.</p></article>
+        <article class="card soft"><h3>Corrosión</h3><p>Inspecciones para diagnosticar estado de refuerzos y vida útil.</p></article>
+        <article class="card soft"><h3>Reforzamientos</h3><p>Informe y propuesta de reparación/mantenimiento.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p class="small">© Nexum Ingeniería S.A.C.</p>
+  </footer>
+
+  <script src="../js/app.js" defer></script>
+</body>
+</html>

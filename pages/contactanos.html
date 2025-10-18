@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Contáctanos | Nexum Ingeniería</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Solicita una propuesta o agenda una reunión con Nexum Ingeniería." />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="icon" href="../assets/brand/logo_ico.png" type="image/png">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container flex flex--between flex--center">
+      <a class="brand" href="../index.html"><img src="../assets/brand/logo-nexum.png" alt="Nexum Ingeniería" width="132" height="48"></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Abrir menú"><span class="nav-toggle__bar"></span></button>
+      <nav id="primary-nav" class="site-nav" aria-label="Principal">
+        <a href="../index.html">Inicio</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="proyectos.html">Proyectos</a>
+        <a class="cta" href="contactanos.html" aria-current="page">Contáctanos</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero" style="--hero-bg:url('../assets/hero/contacto-1920x640.jpg')">
+    <div class="container"><h1>Contáctanos</h1></div>
+  </section>
+
+  <main class="container grid grid--contact grid--gap">
+    <!-- Info -->
+    <section class="contact__info card soft">
+      <h2>Datos de contacto</h2>
+      <p><strong>Oficina:</strong> Calle Germán Schreiber 276, San Isidro — Lima, Perú</p>
+      <p><strong>Correo:</strong> <a href="mailto:nexum@nexum-ingenieria.com">nexum@nexum-ingenieria.com</a></p>
+      <p><strong>Teléfonos:</strong> <a href="tel:+51908715866">+51 908 715 866</a> / <a href="tel:+51975555760">+51 975 555 760</a></p>
+      <p class="small">Atención: Lun–Vie 9:00–18:00</p>
+    </section>
+
+    <!-- Form -->
+    <form class="contact__form card soft" data-form="contacto" novalidate>
+      <h2>Cuéntanos de tu proyecto</h2>
+
+      <div class="form-success" role="status" hidden>
+        <p><strong>¡Gracias!</strong> Tu mensaje fue enviado. Te contactaremos pronto.</p>
+      </div>
+
+      <div class="grid grid--2 grid--sm-1 grid--gap">
+        <label>Tipo de servicio
+          <select name="servicio" required>
+            <option value="">Selecciona…</option>
+            <option>Gerencia y Supervisión</option>
+            <option>Proyecto Integral</option>
+            <option>Evaluación Estructural</option>
+          </select>
+        </label>
+        <label>Sector
+          <select name="sector" required>
+            <option value="">Selecciona…</option>
+            <option>Retail</option>
+            <option>Clínicas</option>
+            <option>Oficinas</option>
+            <option>Educativo</option>
+            <option>Pistas</option>
+            <option>Inmobiliario</option>
+            <option>OPI</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="grid grid--2 grid--sm-1 grid--gap">
+        <label>Ubicación (distrito/ciudad)
+          <input type="text" name="ubicacion" placeholder="Ej. San Isidro, Lima" required>
+        </label>
+        <label>Presupuesto estimado (opcional)
+          <input type="text" name="presupuesto" placeholder="Ej. S/ 1,000,000">
+        </label>
+      </div>
+
+      <div class="grid grid--2 grid--sm-1 grid--gap">
+        <label>Nombre y apellido
+          <input type="text" name="nombre" required>
+        </label>
+        <label>Correo
+          <input type="email" name="email" required>
+        </label>
+      </div>
+
+      <label>Teléfono
+        <input type="tel" name="telefono" required>
+      </label>
+
+      <label>Mensaje
+        <textarea name="mensaje" rows="4" placeholder="Breve alcance del proyecto"></textarea>
+      </label>
+
+      <label class="consent">
+        <input type="checkbox" name="consent" required>
+        Acepto el uso de mis datos para gestionar mi solicitud.
+      </label>
+
+      <div class="form-actions flex flex--gap">
+        <button class="btn primary" type="submit" data-track="enviar-contacto">Enviar</button>
+        <button class="btn ghost" type="reset">Limpiar</button>
+      </div>
+
+      <p class="small">Al enviar, mostraremos el mensaje de confirmación arriba. También puedes escribirnos a <a href="mailto:nexum@nexum-ingenieria.com">nexum@nexum-ingenieria.com</a>.</p>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <p class="small">© Nexum Ingeniería S.A.C.</p>
+  </footer>
+
+  <script src="../js/app.js" defer></script>
+</body>
+</html>
